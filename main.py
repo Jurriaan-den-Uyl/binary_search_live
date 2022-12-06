@@ -19,7 +19,10 @@ number = 250
 random_list = random.sample(range(200000), list_length)
 index = 0
 
+#convert the random list to tuple with 1 element containing the index
 sorted_list = [(idx, item) for idx,item in enumerate(random_list)]
+
+#sort the list
 sorted_list.sort(key=lambda x: x[1])
 
 
