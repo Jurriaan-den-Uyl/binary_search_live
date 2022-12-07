@@ -14,12 +14,12 @@ import time
 start_time = time.process_time()
 
 #variables. number is the number to be found.
-list_length = 100000
+list_length = 1000000
 number = 250
-random_list = random.sample(range(200000), list_length)
+random_list = random.sample(range(2000000), list_length)
 index = 0
 
-#convert the random list to tuple with 1 element containing the index
+#convert the random list to tuple with 1st element containing the index
 sorted_list = [(idx, item) for idx,item in enumerate(random_list)]
 
 #sort the list
@@ -50,7 +50,7 @@ while True:
 		sorted_list = list_A
 #		print(list_A)
 	
-	#check if number is larger than the larger item in list A, if so number must be in list B.
+	#check if number is larger than the largest item in list A, if so number must be in list B.
 	elif number >= list_A[j-1][1]:
 		sorted_list = list_B
 #		print(list_B)
